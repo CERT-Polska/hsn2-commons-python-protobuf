@@ -1,0 +1,9 @@
+Package: python-hsn2-proto
+Version: {VER}
+Section: unknown
+Priority: optional
+Architecture: all
+Depends: python-protobuf (>=2.4.0a)
+Maintainer: Juliusz Brzostek (juliusz.brzostek@cert.pl)
+Description: HSN2 protocol python library.
+Distribution: {DEBIAN_DIST}
