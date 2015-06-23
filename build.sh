@@ -2,6 +2,11 @@
 
 SRC_DIR=./def
 DST_DIR=./hsn2_protobuf
+if [ -f /usr/local/bin/protoc ]; then
+	PROTOC=/usr/local/bin/protoc
+else
+	PROTOC=/usr/bin/protoc
+fi
 
 case "$1" in
     build)
