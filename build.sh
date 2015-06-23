@@ -12,7 +12,7 @@ case "$1" in
     build)
 		for FILE in ${SRC_DIR}/*.proto ; do 
 			echo "Processing: $FILE" ;
-			/usr/local/bin/protoc --proto_path=${SRC_DIR} --python_out=${DST_DIR} $FILE;
+			$PROTOC --proto_path=${SRC_DIR} --python_out=${DST_DIR} $FILE;
 		done
     ;;
     
