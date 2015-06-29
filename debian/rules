@@ -10,7 +10,7 @@ DST_DIR=./hsn2_protobuf
 
 override_dh_auto_clean:
 	./build.sh clean
-	rm -rf hsn2_protobuf.egg-info
+	rm -rf *.egg-info
 	dh_auto_clean
 
 override_dh_auto_configure:
