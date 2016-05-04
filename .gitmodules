@@ -1,3 +1,4 @@
 [submodule "def"]
 	path = def
 	url = https://github.com/CERT-Polska/hsn2-commons-protobuf-definitions.git
+	branch = develop
