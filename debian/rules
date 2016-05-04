@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+
+#export DH_VERBOSE=1
+
+SRC_DIR=./def
+DST_DIR=./hsn2_protobuf
+
+%:
+	dh $@ --with python2 
+
+override_dh_auto_clean:
+	./build.sh clean
+	rm -rf *.egg-info
+	dh_auto_clean
+
+override_dh_auto_configure:
+	./build.sh build
+	dh_auto_configure
